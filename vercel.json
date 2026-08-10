@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/haeyul", "destination": "/haeyul.html" },
+    { "source": "/gondre", "destination": "/gondre.html" },
+    { "source": "/chueotang", "destination": "/chueotang.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

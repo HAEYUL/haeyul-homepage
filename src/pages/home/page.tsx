@@ -1,44 +1,18 @@
 import { useEffect } from 'react';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import StorySection from './components/StorySection';
-import MenuSection from './components/MenuSection';
-import SpaceSection from './components/SpaceSection';
-import ReservationSection from './components/ReservationSection';
-import LocationSection from './components/LocationSection';
+import BrandsSection from './components/BrandsSection';
 import Footer from './components/Footer';
 
 export default function Home() {
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-
-    const elements = document.querySelectorAll('.fade-in');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      observer.disconnect();
-    };
+    document.title = '해율푸드 | 자연이 차린 세 개의 밥상';
   }, []);
 
   return (
     <div className="min-h-screen bg-background-50">
       <Header />
       <main>
-        <HeroSection />
-        <StorySection />
-        <MenuSection />
-        <SpaceSection />
-        <ReservationSection />
-        <LocationSection />
+        <BrandsSection />
       </main>
       <Footer />
     </div>

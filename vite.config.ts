@@ -73,6 +73,14 @@ export default defineConfig({
   build: {
     sourcemap: true,
     outDir: 'out',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        haeyul: resolve(__dirname, 'haeyul.html'),
+        gondre: resolve(__dirname, 'gondre.html'),
+        chueotang: resolve(__dirname, 'chueotang.html'),
+      },
+    },
   },
   resolve: {
     alias: {
