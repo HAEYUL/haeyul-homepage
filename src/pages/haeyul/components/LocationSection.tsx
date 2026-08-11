@@ -52,6 +52,8 @@ export default function LocationSection() {
                     매일 11:00 — 21:00 (브레이크타임 없음)
                     <br />
                     <span className="text-foreground-500 text-sm">라스트오더 19:50</span>
+                    <br />
+                    <span className="text-foreground-500 text-sm">휴무일: 설날·추석 당일</span>
                   </p>
                 </div>
               </div>
