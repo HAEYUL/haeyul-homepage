@@ -49,7 +49,7 @@ export default function LocationSection() {
                 <div>
                   <span className="block text-xs text-foreground-500 mb-1">영업시간</span>
                   <p className="text-sm md:text-base text-foreground-800">
-                    매일 11:00 — 21:00
+                    매일 11:00 — 21:00 (브레이크타임 없음)
                     <br />
                     <span className="text-foreground-500 text-sm">라스트오더 19:50</span>
                   </p>
