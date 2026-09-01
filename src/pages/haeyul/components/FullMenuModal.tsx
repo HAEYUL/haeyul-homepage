@@ -67,7 +67,7 @@ export default function FullMenuModal({ isOpen, onClose }: FullMenuModalProps) {
         {/* Content */}
         <div className="overflow-y-auto p-4 md:p-6">
           <img
-            src="https://storage.readdy-site.link/project_files/0e6e3994-96df-4b84-bc53-47c91305057c/7ff5ef7b-df94-4b2c-b23e-93dd3049774d_compressed_1.webp"
+            src="/images/haeyul/menu-poster.webp"
             alt="해율만두전골 전체 메뉴판"
             className="w-full h-auto rounded-md"
           />
