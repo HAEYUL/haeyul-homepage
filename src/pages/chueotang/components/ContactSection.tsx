@@ -1,4 +1,4 @@
-import { openChannelChat } from '@/lib/channelIO';
+import { CHANNEL_TALK_ENABLED, openChannelChat } from '@/lib/channelIO';
 
 const faqs = [
   { q: '예약이 꼭 필요한가요?', a: '전화로 예약하실 수 있습니다. 예약 없이 방문하셔도 당일 현장 대기로 이용 가능합니다.' },
@@ -17,13 +17,15 @@ export default function ContactSection() {
 
         <div className="max-w-2xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-            <button
-              onClick={openChannelChat}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-500 text-background-50 text-base font-medium rounded-md hover:bg-primary-600 transition-colors cursor-pointer border-none whitespace-nowrap"
-            >
-              <i className="ri-chat-3-line" />
-              채팅으로 문의하기
-            </button>
+            {CHANNEL_TALK_ENABLED && (
+              <button
+                onClick={openChannelChat}
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-500 text-background-50 text-base font-medium rounded-md hover:bg-primary-600 transition-colors cursor-pointer border-none whitespace-nowrap"
+              >
+                <i className="ri-chat-3-line" />
+                채팅으로 문의하기
+              </button>
+            )}
             <a
               href="tel:031-265-3651"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-background-50 text-foreground-800 text-base font-medium rounded-md border border-background-300 hover:bg-background-200 transition-colors no-underline whitespace-nowrap"
